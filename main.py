@@ -6,4 +6,11 @@
 # @Software: PyCharm
 import pytest
 
-pytest.main(["-s", "-k test_test.py"])
+from pylib.web_UI_lib.pageObjects.commonPage import CommonPage
+
+if __name__ == '__main__':
+    # pytest.main(["-s", "-k test_test.py"])
+
+    c = CommonPage()
+    c.move_to_nav_left_location()
+    c.test()
