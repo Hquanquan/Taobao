@@ -9,8 +9,9 @@ import pytest
 from pylib.web_UI_lib.pageObjects.commonPage import CommonPage
 
 if __name__ == '__main__':
-    # pytest.main(["-s", "-k test_test.py"])
+    # pytest.main(["-s", "-k test_commonPage.py"])
 
     c = CommonPage()
     c.move_to_nav_left_location()
-    c.test()
+    l = c.test_001()
+    print(l)
