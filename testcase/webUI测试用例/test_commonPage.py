@@ -154,6 +154,21 @@ class TestCommonPage:
         text = self.loginPage.get_login_text()
         assert text == "密码登录"
 
+    @allure.story("顶部导航栏左侧按钮功能测试")
+    @allure.title("验证鼠标移入【我的淘宝】")
+    def test_move_to_nav_right_mytaobao(self, init_commonPage):
+        """
+        验证鼠标移入【我的淘宝】,弹出一组数据
+        :param init_commonPage:
+        :return:
+        """
+        self.commonPage = init_commonPage
+        # 鼠标移入【我的淘宝】
+        self.commonPage.move_to_nav_right_mytaobao()
+        # 获取弹出的那一组数据的文本值
+        text = self.commonPage.get_nav_right_mytaobao_lists_text()
+        assert text == ['已买到的宝贝', '我的足迹']
+
     @pytest.fixture()
     def after_test_click_nav_right_cart_btn(self, init_commonPage, init_loginPage):
         """
@@ -166,7 +181,7 @@ class TestCommonPage:
         yield
         self.loginPage.back_browser()
 
-    @pytest.mark.test
+    # @pytest.mark.test
     @allure.story("顶部导航栏左侧按钮功能测试")
     @allure.title("验证未登录时，点击【购物车】按钮，跳转到登录页")
     def test_click_nav_right_cart_btn(self, after_test_click_nav_right_cart_btn):
@@ -178,5 +193,107 @@ class TestCommonPage:
         # 点击购物车
         self.commonPage.click_nav_right_cart_btn()
         # 页面跳转到登录页面
+        # 获取登录页面特有文案
         text = self.loginPage.get_login_text()
         assert text == "密码登录"
+
+    # @pytest.mark.test
+    @allure.story("顶部导航栏左侧按钮功能测试")
+    @allure.title("验证鼠标移入【收藏夹】")
+    def test_move_to_nav_right_mytaobao(self, init_commonPage):
+        """
+        验证鼠标移入【收藏夹】,弹出一组数据
+        :param init_commonPage:
+        :return:
+        """
+        self.commonPage = init_commonPage
+        # 鼠标移入【收藏夹】
+        self.commonPage.move_to_nav_right_J_SiteNavFavor()
+        # 获取弹出的那一组数据的文本值
+        text = self.commonPage.get_nav_right_J_SiteNavFavor_lists_text()
+        print(text)
+        assert text == ['收藏的宝贝', '收藏的店铺']
+
+    @pytest.fixture()
+    def after_test_click_nav_right_J_SiteNavFavor(self, init_commonPage, init_loginPage):
+        """
+        验证未登录时，点击【收藏夹】按钮，跳转到登录页,后置处理，返回上一页
+        :param init_commonPage:
+        :param init_loginPage:
+        """
+        self.commonPage = init_commonPage
+        self.loginPage = init_loginPage
+        yield
+        self.loginPage.back_browser()
+
+    # @pytest.mark.test
+    @allure.story("顶部导航栏左侧按钮功能测试")
+    @allure.title("验证未登录时，点击【收藏夹】按钮，跳转到登录页")
+    def test_click_nav_right_J_SiteNavFavor(self, after_test_click_nav_right_J_SiteNavFavor):
+        """
+        验证未登录时，点击【收藏夹】按钮，跳转到登录页
+        :param after_test_click_nav_right_J_SiteNavFavor:
+        :return:
+        """
+        # 点击【收藏夹】
+        self.commonPage.click_nav_right_J_SiteNavFavor()
+        # 跳转到登录页
+        # 获取登录页面特有文案
+        text = self.loginPage.get_login_text()
+        assert text == "密码登录"
+
+    @pytest.fixture()
+    def after_test_click_nav_right_catalog(self, init_commonPage, init_marketPage):
+        """
+        验证点击【商品分类】按钮，跳转到商品分类市场页,后置处理：返回上一页
+        :param init_commonPage:
+        :param init_marketPage:
+        """
+        self.commonPage = init_commonPage
+        self.marketPage = init_marketPage
+        yield
+        self.marketPage.back_browser()
+
+    # @pytest.mark.test
+    @allure.story("顶部导航栏左侧按钮功能测试")
+    @allure.title("验证点击【商品分类】按钮，跳转到商品分类市场页")
+    def test_click_nav_right_catalog(self, after_test_click_nav_right_catalog):
+        """
+        验证点击【收藏夹】按钮，跳转到商品分类市场页
+        :param after_test_click_nav_right_catalog:
+        :return:
+        """
+        # 点击【商品分类】
+        self.commonPage.click_nav_right_catalog()
+        # 跳转到商品分类市场页
+        title = self.marketPage.get_url_title()
+        assert title == "淘宝首页行业市场"
+
+    @pytest.fixture()
+    def after_test_click_J_SiteNavFree(self, init_commonPage, init_openShopPage):
+        """
+        验证点击【免费开店】按钮，跳转到新商家开店页,后置处理：返回上一页
+        :param init_commonPage:
+        :param init_openShopPage:
+        :return:
+        """
+        self.commonPage = init_commonPage
+        self.openShopPage = init_openShopPage
+        yield
+        self.openShopPage.back_browser()
+
+    @pytest.mark.test
+    @allure.story("顶部导航栏左侧按钮功能测试")
+    @allure.title("验证点击【免费开店】按钮，跳转到新商家开店页")
+    def test_click_J_SiteNavFree(self, after_test_click_J_SiteNavFree):
+        """
+        验证点击【免费开店】按钮，跳转到新商家开店页
+        :param after_test_click_J_SiteNavFree:
+        :return:
+        """
+        # 点击免费开店
+        self.commonPage.click_J_SiteNavFree()
+        # 跳转到新商家开店页
+        # 获取新商家开店页的title
+        title = self.openShopPage.get_url_title()
+        assert title == "新商家开店"

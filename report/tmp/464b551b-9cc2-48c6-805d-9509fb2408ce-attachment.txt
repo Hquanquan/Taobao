@@ -1,0 +1,4 @@
+INFO     BasePage:basePage.py:67 2021-06-01 22:07:49-627492 Had find the element ' 手机逛淘宝 ' successfully by id via value:J_SiteNavMobile
+INFO     BasePage:basePage.py:373 2021-06-01 22:07:53-527355 The element was click
+INFO     BasePage:basePage.py:385 2021-06-01 22:07:53-528352 Current page title is PC下载页
+INFO     BasePage:basePage.py:288 2021-06-01 22:07:54-456970 Click back to current page.

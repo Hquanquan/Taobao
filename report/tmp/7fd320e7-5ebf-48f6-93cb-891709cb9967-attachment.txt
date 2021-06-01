@@ -1,0 +1,4 @@
+INFO     BasePage:basePage.py:121 2021-06-01 22:07:42-627497 Had find the element ' 免费注册 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[2]
+INFO     BasePage:basePage.py:373 2021-06-01 22:07:48-507214 The element was click
+INFO     BasePage:basePage.py:385 2021-06-01 22:07:48-508214 Current page title is 注册
+INFO     BasePage:basePage.py:288 2021-06-01 22:07:49-519863 Click back to current page.

@@ -1,0 +1,9 @@
+INFO     myDriver:webDriver.py:50 2021-06-01 21:26:33-623061 You had select Chrome browser!
+INFO     myDriver:webDriver.py:53 2021-06-01 21:26:33-623061 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+INFO     myDriver:webDriver.py:56 2021-06-01 21:26:33-623061 The test server url is https://www.taobao.com/
+INFO     myDriver:webDriver.py:61 2021-06-01 21:26:39-907145 Starting Chorme browser!
+INFO     myDriver:webDriver.py:78 2021-06-01 21:26:44-562696 Open url https://www.taobao.com/ 
+INFO     myDriver:webDriver.py:81 2021-06-01 21:26:44-578695 Set implicitly wait 10
+INFO     BasePage:basePage.py:130 2021-06-01 21:26:44-952169 Had find the element ' 中国大陆 ' successfully by css selector via value:#J_SiteNavBd .site-nav-menu-hd .site-nav-region
+INFO     BasePage:basePage.py:399 2021-06-01 21:26:45-299029 The mouse move on 中国大陆
+INFO     BasePage:basePage.py:212 2021-06-01 21:26:45-368028 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavRegionList"]/li

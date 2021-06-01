@@ -33,12 +33,18 @@ class CommonPage(BasePage):
         self.nav_left_taobao = ['id', 'J_SiteNavMobile']
         # 我的淘宝
         self.nav_right_mytaobao = ['id', 'J_SiteNavMytaobao']
+        # 鼠标移入【我的淘宝】显示的一组元素
+        self.nav_right_mytaobao_lists = ["xpath", '//*[@id="J_SiteNavMytaobao"]/div[2]/div/a']
         # 购物车
         self.nav_right_cart = ['id', 'J_MiniCart']
         # 收藏夹
         self.nav_right_J_SiteNavFavor = ['xpath', '//*[@id="J_SiteNavFavor"]']
+        # 鼠标移入【收藏夹】显示的一组元素
+        self.nav_right_J_SiteNavFavor_lists = ["xpath", '//*[@id="J_SiteNavFavor"]/div[2]/div/a']
         # 商品分类
         self.nav_right_catalog = ['xpath', '//*[@id="J_SiteNavCatalog"]/div/a/span']
+        # 免费开店
+        self.J_SiteNavFree = ["xpath", '//*[@id="J_SiteNavFree"]/div/a/span']
         # 牵牛卖家中心
         self.nav_right_J_SiteNavSeller = ['id', 'J_SiteNavSeller']
         # 联系客服
@@ -54,7 +60,7 @@ class CommonPage(BasePage):
         """
         self.move_to_element(self.nav_left_location)
 
-    @allure.step("step:鼠标悬停中国大陆,获取弹出的那一组地区名称")
+    @allure.step("step:鼠标移入中国大陆,获取弹出的那一组地区名称")
     def get_nav_left_locations_text(self):
         """
         鼠标悬停中国大陆,获取弹出的那一组地区名称元素
@@ -103,6 +109,25 @@ class CommonPage(BasePage):
         """
         self.click(self.nav_right_mytaobao)
 
+    @allure.step("step:鼠标移入【我的淘宝】")
+    def move_to_nav_right_mytaobao(self):
+        """
+        鼠标移入【我的淘宝
+        """
+        self.move_to_element(self.nav_right_mytaobao)
+
+    @allure.step("step:鼠标移入【我的淘宝】,获取弹出的那一组元素文案")
+    def get_nav_right_mytaobao_lists_text(self):
+        """
+        鼠标移入我的淘宝,获取弹出的那一组元素文案
+        :return:
+        """
+        mytaobaoList_text = []
+        eles = self.find_elements(self.nav_right_mytaobao_lists)
+        for ele in eles:
+            mytaobaoList_text.append(ele.text)
+        return mytaobaoList_text
+
     @allure.step("step:点击【购物车】按钮")
     def click_nav_right_cart_btn(self):
         """
@@ -110,3 +135,55 @@ class CommonPage(BasePage):
         :return:
         """
         self.click(self.nav_right_cart)
+
+    @allure.step("step:鼠标移入【收藏夹】")
+    def move_to_nav_right_J_SiteNavFavor(self):
+        """
+        鼠标移入【收藏夹】
+        :return:
+        """
+        self.move_to_element(self.nav_right_J_SiteNavFavor)
+
+    @allure.step("step:鼠标移入【收藏夹】后,获取弹出的那一组元素文案")
+    def get_nav_right_J_SiteNavFavor_lists_text(self):
+        """
+        鼠标移入【收藏夹】,获取弹出的那一组元素文案
+        :return:
+        """
+        J_SiteNavFavor_lists_text = []
+        eles = self.find_elements(self.nav_right_J_SiteNavFavor_lists)
+        for ele in eles:
+            J_SiteNavFavor_lists_text.append(ele.text)
+        return J_SiteNavFavor_lists_text
+
+    @allure.step("step:点击【收藏夹】")
+    def click_nav_right_J_SiteNavFavor(self):
+        """
+        点击【收藏夹】
+        :return:
+        """
+        self.click(self.nav_right_J_SiteNavFavor)
+
+    @allure.step("step:点击【商品分类】")
+    def click_nav_right_catalog(self):
+        """
+        点击【商品分类】
+        :return:
+        """
+        self.click(self.nav_right_catalog)
+
+    @allure.step("step:点击【免费开店】")
+    def click_J_SiteNavFree(self):
+        """
+        点击【免费开店】
+        :return:
+        """
+        self.click(self.J_SiteNavFree)
+
+
+
+
+
+
+
+

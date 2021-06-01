@@ -1,0 +1,6 @@
+INFO     BasePage:basePage.py:67 2021-06-01 21:27:02-198428 Had find the element ' 
+购物车
+ ' successfully by id via value:J_MiniCart
+INFO     BasePage:basePage.py:373 2021-06-01 21:27:04-026296 The element was click
+INFO     BasePage:basePage.py:121 2021-06-01 21:27:04-112876 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+INFO     BasePage:basePage.py:288 2021-06-01 21:27:04-929568 Click back to current page.

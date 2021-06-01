@@ -10,6 +10,8 @@ from pylib.web_UI_lib.pageObjects.commonPage import CommonPage
 from pylib.web_UI_lib.pageObjects.downloadPage import DownloadPage
 from pylib.web_UI_lib.pageObjects.homePage import HomePage
 from pylib.web_UI_lib.pageObjects.loginPage import LoginPage
+from pylib.web_UI_lib.pageObjects.marketPage import MarketPage
+from pylib.web_UI_lib.pageObjects.openShopPage import OpenShopPage
 from pylib.web_UI_lib.pageObjects.registerPage import RegisterPage
 
 
@@ -45,10 +47,26 @@ def init_registerPage():
 @pytest.fixture(scope="session")
 def init_downloadPage():
     """
-    初始化创建一个registerPage 实例对象
+    初始化创建一个downloadPage 实例对象
     :return:
     """
     downloadPage = DownloadPage()
     yield downloadPage
 
+@pytest.fixture(scope="session")
+def init_marketPage():
+    """
+    初始化创建一个marketPage 实例对象
+    :return:
+    """
+    marketPage = MarketPage()
+    yield marketPage
 
+@pytest.fixture(scope="session")
+def init_openShopPage():
+    """
+    初始化创建一个openShopPage 实例对象
+    :return:
+    """
+    openShopPage = OpenShopPage()
+    yield openShopPage
