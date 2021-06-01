@@ -24,11 +24,11 @@ class CommonPage(BasePage):
         # 中国大陆  一组元素
         self.nav_left_locations = ["xpath", '//*[@id="J_SiteNavRegionList"]/li']
         # 亲，请登录
-        self.nav__left_Login = ["xpath", '//*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]']
+        self.nav_left_Login = ["xpath", '//*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]']
         # 点击免费注册
         self.nav_left_register = ['xpath', '//*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[2]']
         # 用户名称(已登录时)
-        self.nav__left_user = ['xpath', '//*[@id="J_SiteNavLogin"]/div[1]/div[2]']
+        self.nav_left_user = ['xpath', '//*[@id="J_SiteNavLogin"]/div[1]/div[2]']
         # 手机逛淘宝
         self.nav_left_taobao = ['id', 'J_SiteNavMobile']
         # 我的淘宝
@@ -54,11 +54,59 @@ class CommonPage(BasePage):
         """
         self.move_to_element(self.nav_left_location)
 
-    def test_001(self):
-        # self.click(self.nav_left_locations)
-        mylist = []
+    @allure.step("step:鼠标悬停中国大陆,获取弹出的那一组地区名称")
+    def get_nav_left_locations_text(self):
+        """
+        鼠标悬停中国大陆,获取弹出的那一组地区名称元素
+        :return:
+        """
+        locationsList = []
         eles = self.find_elements(self.nav_left_locations)
         for ele in eles:
-            print(ele.text)
-            mylist.append(ele.text)
-        return mylist
+            locationsList.append(ele.text)
+        return locationsList
+
+    @allure.step("step:检查【亲，请登录】按钮是否显示")
+    def isDisplay_nav_left_Login(self):
+        """
+        检查【亲，请登录】按钮是否显示，显示返回Ture,不显示返回False
+        """
+        return self.isdispaly(self.nav_left_Login)
+
+    @allure.step("step:点击【亲，请登录】按钮")
+    def click_nav_left_Login_btn(self):
+        """
+        点击【亲，请登录】按钮
+        """
+        self.click(self.nav_left_Login)
+
+    @allure.step("step:点击【免费注册】按钮")
+    def click_nav_left_register_btn(self):
+        """
+        点击【免费注册】按钮
+        :return:
+        """
+        self.click(self.nav_left_register)
+
+    @allure.step("step:点击【手机逛淘宝】按钮")
+    def click_nav_left_taobao_btn(self):
+        """
+        点击【手机逛淘宝】按钮
+        :return:
+        """
+        self.click(self.nav_left_taobao)
+
+    @allure.step("step:点击【我的淘宝】按钮")
+    def click_nav_right_mytaobao_btn(self):
+        """
+        点击【我的淘宝】按钮
+        """
+        self.click(self.nav_right_mytaobao)
+
+    @allure.step("step:点击【购物车】按钮")
+    def click_nav_right_cart_btn(self):
+        """
+        点击【购物车】按钮
+        :return:
+        """
+        self.click(self.nav_right_cart)

@@ -555,9 +555,10 @@ class BasePage:
 
     def isdispaly(self, selector):
         """
-        判断当前元素是否可见
+        判断当前元素是否可见,可见返回True,不看见返回False
         :return:
         """
+
         el = self.find_element(selector)  # 获取元素位置信息
         if el:
             return el.is_displayed()

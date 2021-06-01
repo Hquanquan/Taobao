@@ -1,16 +1,18 @@
 #!/usr/bin/python3.7
 # -*- coding: utf-8 -*-
-# @Time    : 2021/5/4 12:56
+# @Time    : 2021/6/1 12:56
 # @Author  : 黄权权
-# @File    : homePage.py
+# @File    : downloadPage.py
 # @Software: PyCharm
-from pylib.web_UI_lib.pageObjects.basePage import BasePage
+# @Desc    : 下载页面
+from pylib.web_UI_lib.pageObjects.commonPage import CommonPage
 
 
-class HomePage(BasePage):
+class DownloadPage(CommonPage):
     """
-    首页
+    PC下载页
     """
     def __init__(self):
         # 继承父类的__init__()构造方法
         super().__init__()
+

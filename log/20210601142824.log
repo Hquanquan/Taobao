@@ -1,0 +1,10 @@
+2021-06-01 14:28:25-112924 You had select Chrome browser!
+2021-06-01 14:28:25-113896 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 14:28:25-114957 The test server url is https://www.taobao.com/
+2021-06-01 14:28:29-986414 Starting Chorme browser!
+2021-06-01 14:28:33-881816 Open url https://www.taobao.com/ 
+2021-06-01 14:28:33-897816 Set implicitly wait 10
+2021-06-01 14:28:34-068813 Had find the element ' 免费注册 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[2]
+2021-06-01 14:28:35-750815 The element was click
+2021-06-01 14:28:35-751813 Current page title is 注册
+2021-06-01 14:28:36-591792 Click back to current page.

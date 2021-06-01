@@ -1,0 +1,8 @@
+2021-06-01 10:27:00-807085 You had select Chrome browser!
+2021-06-01 10:27:00-808170 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 10:27:00-808170 The test server url is https://www.taobao.com/
+2021-06-01 10:27:05-713758 Starting Chorme browser!
+2021-06-01 10:27:10-429037 Open url https://www.taobao.com/ 
+2021-06-01 10:27:10-433041 Set implicitly wait 10
+2021-06-01 10:27:10-579039 Had find the element ' 中国大陆 ' successfully by css selector via value:#J_SiteNavBd .site-nav-menu-hd .site-nav-region
+2021-06-01 10:27:10-954036 The mouse move on 中国大陆
