@@ -13,4 +13,4 @@ class HomePage(BasePage):
     """
     def __init__(self):
         # 继承父类的__init__()构造方法
-        super().__init__()
+       super(HomePage, self).__init__()

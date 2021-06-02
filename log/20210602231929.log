@@ -1,0 +1,10 @@
+2021-06-02 23:19:30-564574 You had select Chrome browser!
+2021-06-02 23:19:30-564574 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-02 23:19:30-564574 The test server url is https://www.taobao.com/
+2021-06-02 23:19:35-802530 Starting Chorme browser!
+2021-06-02 23:19:40-261533 Open url https://www.taobao.com/ 
+2021-06-02 23:19:40-269531 Set implicitly wait 10
+2021-06-02 23:19:40-477478 Had find the element ' 联系客服 ' successfully by xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+2021-06-02 23:19:42-440504 The element was click
+2021-06-02 23:19:42-441472 Current page title is 服务中心
+2021-06-02 23:19:43-353921 Click back to current page.

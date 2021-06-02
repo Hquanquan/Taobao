@@ -17,7 +17,8 @@ class CommonPage(BasePage):
 
     def __init__(self):
         # 继承父类的__init__()构造方法
-        super().__init__()
+        # super().__init__()
+        super(CommonPage, self).__init__()
 
         # 中国大陆
         self.nav_left_location = ["css selector", "#J_SiteNavBd .site-nav-menu-hd .site-nav-region"]
@@ -47,10 +48,16 @@ class CommonPage(BasePage):
         self.J_SiteNavFree = ["xpath", '//*[@id="J_SiteNavFree"]/div/a/span']
         # 牵牛卖家中心
         self.nav_right_J_SiteNavSeller = ['id', 'J_SiteNavSeller']
+        # 鼠标移入[牵牛卖家中心]后显示的那一组元素
+        self.nav_right_J_SiteNavSeller_lists = ["xpath", '//*[@id="J_SiteNavSeller"]/div[2]/div/a']
         # 联系客服
         self.nav_right_J_SiteNavService = ['xpath', '//*[@id="J_SiteNavService"]/div[1]/a/span']
+        # 鼠标移入【联系客服】后显示的那一组元素
+        self.right_J_SiteNavService_lists = ["xpath", '//*[@id="J_SiteNavService"]/div[2]/div/a']
         # 网站导航
         self.nav_right_J_SiteNavSitemap = ['xpath', '//*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]']
+        # 鼠标移入【网站导航】后显示的部分导航元素
+        self.J_SiteMapBd = ["id", "J_SiteMapBd"]
 
     @allure.step("step:鼠标悬停中国大陆")
     def move_to_nav_left_location(self):
@@ -180,10 +187,84 @@ class CommonPage(BasePage):
         """
         self.click(self.J_SiteNavFree)
 
+    @allure.step("step:鼠标移入【牵牛卖家中心】")
+    def move_to_nav_right_J_SiteNavSeller(self):
+        """
+        鼠标移入【牵牛卖家中心】
+        :return:
+        """
+        self.move_to_element(self.nav_right_J_SiteNavSeller)
 
+    @allure.step("鼠标移入【牵牛卖家中心】后,获取弹出的那一组元素文案")
+    def get_nav_right_J_SiteNavSeller_lists_text(self):
+        """
+        鼠标移入【牵牛卖家中心】后,获取弹出的那一组元素文案
+        :return:
+        """
+        J_SiteNavSeller_lists_text = []
+        eles = self.find_elements(self.nav_right_J_SiteNavSeller_lists)
+        for ele in eles:
+            J_SiteNavSeller_lists_text.append(ele.text)
+        return J_SiteNavSeller_lists_text
 
+    @allure.step("step:点击【牵牛卖家中心】")
+    def click_nav_right_J_SiteNavSeller(self):
+        """
+        点击【牵牛卖家中心】
+        :return:
+        """
+        self.click(self.nav_right_J_SiteNavSeller)
 
+    @allure.step("step:鼠标移入【联系客服】")
+    def move_to_nav_right_J_SiteNavService(self):
+        """
+        鼠标移入【联系客服】
+        :return:
+        """
+        self.move_to_element(self.nav_right_J_SiteNavService)
 
+    @allure.step("step:鼠标移入【联系客服】后，获取弹出的那一组元素的文本值")
+    def get_nav_right_J_SiteNavService_lists_text(self):
+        """
+        鼠标移入【联系客服】后，获取弹出的那一组元素的文本值
+        :return:
+        """
+        text = []
+        eles = self.find_elements(self.right_J_SiteNavService_lists)
+        for ele in eles:
+            text.append(ele.text)
+        return text
 
+    @allure.step("step:点击【联系客服】")
+    def click_nav_right_J_SiteNavService(self):
+        """
+        点击【联系客服】
+        :return:
+        """
+        self.click(self.nav_right_J_SiteNavService)
+
+    @allure.step("step：鼠标移入【网站导航】")
+    def move_to_nav_right_J_SiteNavSitemap(self):
+        """
+        鼠标移入【网站导航】
+        :return:
+        """
+        self.move_to_element(self.nav_right_J_SiteNavSitemap)
+
+    @allure.step("step：判断鼠标移入【网站导航】后,是否显示的部分导航元素")
+    def isDisplay_J_SiteMapBd(self):
+        """
+        判断鼠标移入【网站导航】后,是否显示的部分导航元素,显示返回True，不显示返回False
+        :return:
+        """
+        return self.isdispaly(self.J_SiteMapBd)
+
+    @allure.step("step:点击【网站导航】")
+    def click_nav_right_J_SiteNavSitemap(self):
+        """
+        点击【网站导航】
+        :return:
+        """
+        self.click(self.nav_right_J_SiteNavSitemap)
 
 

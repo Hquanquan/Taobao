@@ -1,7 +1,0 @@
-INFO     BasePage:basePage.py:67 2021-06-01 22:08:00-294139 Had find the element ' 我的淘宝
- ' successfully by id via value:J_SiteNavMytaobao
-INFO     BasePage:basePage.py:399 2021-06-01 22:08:00-629709 The mouse move on 我的淘宝
-
-已买到的宝贝
-我的足迹
-INFO     BasePage:basePage.py:212 2021-06-01 22:08:00-684713 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavMytaobao"]/div[2]/div/a

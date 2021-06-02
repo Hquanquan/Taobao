@@ -1,5 +1,0 @@
-INFO     BasePage:basePage.py:67 2021-06-01 22:07:54-554971 Had find the element ' 我的淘宝
- ' successfully by id via value:J_SiteNavMytaobao
-INFO     BasePage:basePage.py:373 2021-06-01 22:07:56-672198 The element was click
-INFO     BasePage:basePage.py:121 2021-06-01 22:07:56-741659 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
-INFO     BasePage:basePage.py:288 2021-06-01 22:07:57-563285 Click back to current page.

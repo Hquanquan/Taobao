@@ -1,0 +1,9 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:09:59-883643 Had find the element ' 
+收藏夹
+ ' successfully by xpath via value://*[@id="J_SiteNavFavor"]
+INFO     BasePage:basePage.py:399 2021-06-03 00:10:00-210255 The mouse move on 
+收藏夹
+
+收藏的宝贝
+收藏的店铺
+INFO     BasePage:basePage.py:212 2021-06-03 00:10:00-267893 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavFavor"]/div[2]/div/a

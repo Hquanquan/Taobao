@@ -1,0 +1,12 @@
+INFO     BasePage:basePage.py:67 2021-06-03 00:10:12-490768 Had find the element ' 千牛卖家中心
+
+免费开店
+已卖出的宝贝
+出售中的宝贝
+卖家服务市场
+卖家培训中心
+体检中心
+问商友 ' successfully by id via value:J_SiteNavSeller
+INFO     BasePage:basePage.py:373 2021-06-03 00:10:13-901801 The element was click
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:13-966664 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+INFO     BasePage:basePage.py:288 2021-06-03 00:10:14-973104 Click back to current page.

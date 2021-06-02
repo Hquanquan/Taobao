@@ -1,4 +1,0 @@
-INFO     BasePage:basePage.py:121 2021-06-01 21:26:46-360029 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
-INFO     BasePage:basePage.py:373 2021-06-01 21:26:50-816967 The element was click
-INFO     BasePage:basePage.py:121 2021-06-01 21:26:50-890203 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
-INFO     BasePage:basePage.py:288 2021-06-01 21:26:52-374764 Click back to current page.

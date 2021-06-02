@@ -1,0 +1,9 @@
+2021-06-02 23:12:13-357613 You had select Chrome browser!
+2021-06-02 23:12:13-357613 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-02 23:12:13-357613 The test server url is https://www.taobao.com/
+2021-06-02 23:12:17-727592 Starting Chorme browser!
+2021-06-02 23:12:21-436593 Open url https://www.taobao.com/ 
+2021-06-02 23:12:21-439979 Set implicitly wait 10
+2021-06-02 23:12:21-639014 Had find the element ' 联系客服 ' successfully by xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+2021-06-02 23:12:22-035786 The mouse move on 联系客服
+2021-06-02 23:12:22-087260 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavService"]/div[2]/div/a

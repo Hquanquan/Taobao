@@ -1,0 +1,4 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:06-703822 Had find the element ' 免费开店 ' successfully by xpath via value://*[@id="J_SiteNavFree"]/div/a/span
+INFO     BasePage:basePage.py:373 2021-06-03 00:10:10-726491 The element was click
+INFO     BasePage:basePage.py:385 2021-06-03 00:10:10-727491 Current page title is 新商家开店
+INFO     BasePage:basePage.py:288 2021-06-03 00:10:11-556489 Click back to current page.

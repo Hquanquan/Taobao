@@ -1,0 +1,1 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:09:24-000282 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]

@@ -1,0 +1,10 @@
+2021-06-02 22:12:29-765927 You had select Chrome browser!
+2021-06-02 22:12:29-766925 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-02 22:12:29-766925 The test server url is https://www.taobao.com/
+2021-06-02 22:12:38-417871 Starting Chorme browser!
+2021-06-02 22:12:43-740645 Open url https://www.taobao.com/ 
+2021-06-02 22:12:43-751643 Set implicitly wait 10
+2021-06-02 22:12:44-372542 Had find the element ' 免费开店 ' successfully by xpath via value://*[@id="J_SiteNavFree"]/div/a/span
+2021-06-02 22:13:02-153681 The element was click
+2021-06-02 22:13:02-153681 Current page title is 新商家开店
+2021-06-02 22:13:04-376901 Click back to current page.

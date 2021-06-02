@@ -23,12 +23,12 @@ def run():
 
 
 if __name__ == '__main__':
-    # run()
+    run()
 
     # pytest.main(["-s", "-k test_isDisplay_nav_left_Login"])
 
     # 运行被标记有test的测试用例
-    pytest.main(["-s", "-m", "test"])
+    # pytest.main(["-s", "-m", "test"])
 
     # c = CommonPage()
     # c.move_to_nav_left_location()

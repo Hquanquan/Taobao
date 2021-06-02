@@ -17,7 +17,8 @@ class LoginPage(BasePage):
 
     def __init__(self):
         # 继承父类的__init__()构造方法
-        super().__init__()
+        # super().__init__()
+        super(LoginPage, self).__init__()
 
         # 密码登录文案
         self.login_text = ['xpath', '//*[@id="login"]/div[2]/div/div[1]/a[1]']

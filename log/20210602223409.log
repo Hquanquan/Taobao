@@ -1,0 +1,18 @@
+2021-06-02 22:34:10-203783 You had select Chrome browser!
+2021-06-02 22:34:10-203783 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-02 22:34:10-204813 The test server url is https://www.taobao.com/
+2021-06-02 22:34:15-363147 Starting Chorme browser!
+2021-06-02 22:34:19-765673 Open url https://www.taobao.com/ 
+2021-06-02 22:34:19-768673 Set implicitly wait 10
+2021-06-02 22:34:19-983673 Had find the element ' 千牛卖家中心
+ ' successfully by id via value:J_SiteNavSeller
+2021-06-02 22:34:20-611239 The mouse move on 千牛卖家中心
+
+免费开店
+已卖出的宝贝
+出售中的宝贝
+卖家服务市场
+卖家培训中心
+体检中心
+问商友
+2021-06-02 22:34:20-726239 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavFavor"]/div[2]/div/a

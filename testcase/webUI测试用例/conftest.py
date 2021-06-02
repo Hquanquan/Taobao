@@ -7,12 +7,14 @@
 import pytest
 
 from pylib.web_UI_lib.pageObjects.commonPage import CommonPage
+from pylib.web_UI_lib.pageObjects.consumerServicePage import ConsumerServicePage
 from pylib.web_UI_lib.pageObjects.downloadPage import DownloadPage
 from pylib.web_UI_lib.pageObjects.homePage import HomePage
 from pylib.web_UI_lib.pageObjects.loginPage import LoginPage
 from pylib.web_UI_lib.pageObjects.marketPage import MarketPage
 from pylib.web_UI_lib.pageObjects.openShopPage import OpenShopPage
 from pylib.web_UI_lib.pageObjects.registerPage import RegisterPage
+from pylib.web_UI_lib.pageObjects.siteMapPage import SiteMapPage
 
 
 @pytest.fixture(scope="session")
@@ -26,6 +28,7 @@ def init_commonPage():
     # 关闭浏览器
     # commonPage.quit_browser()
 
+
 @pytest.fixture(scope="session")
 def init_loginPage():
     """
@@ -34,6 +37,7 @@ def init_loginPage():
     """
     loginPage = LoginPage()
     yield loginPage
+
 
 @pytest.fixture(scope="session")
 def init_registerPage():
@@ -44,6 +48,7 @@ def init_registerPage():
     registerPage = RegisterPage()
     yield registerPage
 
+
 @pytest.fixture(scope="session")
 def init_downloadPage():
     """
@@ -52,6 +57,7 @@ def init_downloadPage():
     """
     downloadPage = DownloadPage()
     yield downloadPage
+
 
 @pytest.fixture(scope="session")
 def init_marketPage():
@@ -62,6 +68,7 @@ def init_marketPage():
     marketPage = MarketPage()
     yield marketPage
 
+
 @pytest.fixture(scope="session")
 def init_openShopPage():
     """
@@ -70,3 +77,22 @@ def init_openShopPage():
     """
     openShopPage = OpenShopPage()
     yield openShopPage
+
+@pytest.fixture(scope="session")
+def init_consumerServicePage():
+    """
+    初始化创建一个consumerServicePage 实例对象
+    :return:
+    """
+    consumerServicePage = ConsumerServicePage()
+    yield consumerServicePage
+
+@pytest.fixture(scope="session")
+def init_siteMapPage():
+    """
+    初始化创建一个siteMapPage 实例对象
+    :return:
+    """
+    siteMapPage = SiteMapPage()
+    yield siteMapPage
+

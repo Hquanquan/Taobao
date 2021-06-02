@@ -1,0 +1,4 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:15-569849 Had find the element ' 联系客服 ' successfully by xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+INFO     BasePage:basePage.py:373 2021-06-03 00:10:16-567514 The element was click
+INFO     BasePage:basePage.py:385 2021-06-03 00:10:16-568514 Current page title is 服务中心
+INFO     BasePage:basePage.py:288 2021-06-03 00:10:17-225514 Click back to current page.
