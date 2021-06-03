@@ -1,7 +1,7 @@
 #!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
 # @Time    : 2020/12/4 14:47
-# @File : basepage2.py 
+# @File : basePage.py
 # @Author  : 黄权权
 # @Software: PyCharm
 # @Desc    : 使用OP模式，硬编码手动为每个页面动态赋值元素属性
@@ -57,7 +57,7 @@ class BasePage:
                 EC.visibility_of_element_located(selectors)
             )
         except TimeoutException as e:
-            logger.error("%s Timeout查找元素超时" % get_dataTime())
+            logger.error("%s %s :Timeout查找元素超时。" % (get_dataTime(), e))
 
         # 根据id定位
         if selector_by == "i" or selector_by == "id":
@@ -140,6 +140,7 @@ class BasePage:
 
         #   查找一组元素
 
+    # 根据特定的表达式获取一组元素
     def find_elements(self, selectors):
         """
         获得单一组元素
@@ -231,6 +232,7 @@ class BasePage:
 
         # 保存截图
 
+    # 截图
     def get_windows_img(self):
         """
         截图
@@ -238,7 +240,7 @@ class BasePage:
         """
         file_path = os.path.abspath('.') + '\\screenshots\\'
         isExists = os.path.exists(file_path)
-        print(f"截图位置：{file_path}")
+        # print(f"截图位置：{file_path}")
         # 判断文件夹是否存在，如果不存在则创建。
         if not isExists:
             try:
@@ -258,6 +260,7 @@ class BasePage:
 
         # quit browser and end testing 浏览器退出方法
 
+    # 退出浏览器
     def quit_browser(self):
         """
         浏览器退出方法
@@ -269,6 +272,7 @@ class BasePage:
 
         # forward browser 浏览器前进方法
 
+    # 浏览器前进到下一页
     def forward_browser(self):
         """
         forward browser 浏览器前进方法
@@ -279,6 +283,7 @@ class BasePage:
 
         # back browser 浏览器后退方法
 
+    # 浏览器后退到上一页
     def back_browser(self):
         """
         back browser 浏览器后退方法
@@ -289,6 +294,7 @@ class BasePage:
 
         #  关闭当前浏览器窗口
 
+    # 关闭当前浏览器窗口
     def close_browser(self):
         """
         关闭当前浏览器窗口
@@ -302,6 +308,7 @@ class BasePage:
 
         # Text input 文本框输入
 
+    # 文本输入框中输入内容
     def send_keys(self, selector, text):
         """
         文本输入框中输入内容
@@ -318,6 +325,7 @@ class BasePage:
             logger.error("%s Failed to type in input box with %s" % (get_dataTime(), e))
             self.get_windows_img()
 
+    # 获取元素的文本值
     def get_element_text(self, selector):
         """
         获取元素的文本值
@@ -327,9 +335,10 @@ class BasePage:
         ele = self.find_element(selector)
         return ele.text
 
+    # 给一组输入框遍历输入内容
     def forEach_send_keys(self, selector_objects, text):
         """
-        遍历输入
+        给一组输入框遍历输入内容
         :param selector_objects:
         :param text:
         :return:
@@ -345,6 +354,7 @@ class BasePage:
 
         # Text clear 文本框清空 selector:元素位置
 
+    # 清空文本框
     def clear(self, selector):
         """
         清空文本框
@@ -361,6 +371,7 @@ class BasePage:
 
         # Text click 点击事件 selector:元素位置
 
+    # 点击元素
     def click(self, selector):
         """
         点击页面元素
@@ -377,6 +388,7 @@ class BasePage:
 
         # get_url_title 获取网页标题
 
+    # 获取当前网页标题
     def get_url_title(self):
         """
         get_url_title 获取当前网页标题
@@ -387,9 +399,10 @@ class BasePage:
 
         # 鼠标悬停在元素上
 
+    # 鼠标移入某个元素上
     def move_to_element(self, selector):
         """
-        鼠标悬停在元素上
+        鼠标移入某个元素上
         :param selector:
         :return:
         """
@@ -403,6 +416,7 @@ class BasePage:
 
         # 获取当前窗口句柄
 
+    # 获取当前窗口句柄
     def current_window_handle(self):
         """
         获取当前窗口句柄
@@ -413,6 +427,7 @@ class BasePage:
 
         # 获取所有窗口句柄
 
+    # 获取所有窗口句柄
     def window_handles(self):
         """
         获取所有窗口句柄
@@ -423,6 +438,7 @@ class BasePage:
 
         # 切换窗口
 
+    # 切换到指定的窗口，默认为当前窗口
     def switch_to_window(self, window=""):
         """
         切换到指定的窗口，默认为当前窗口
@@ -437,6 +453,7 @@ class BasePage:
 
         # 切换到当前最新打开的窗口
 
+    # 切换到当前最新打开的窗口
     def switch_to_new_window(self):
         """
         切换到当前最新打开的窗口
@@ -445,8 +462,7 @@ class BasePage:
         logger.info("%s Switch to the current latest window" % get_dataTime())
         self.driver.switch_to.window(self.window_handles()[-1])
 
-        # 切换到指定的iframe
-
+    # 切换到指定的iframe
     def switch_to_iframe(self, selector):
         """
         切换到指定的iframe
@@ -459,19 +475,26 @@ class BasePage:
 
         # 切换回默认的主界面
 
+    # 切换回默认的iframe
     def switch_to_default_content(self):
-        """ 切换回默认的iframe """
+        """
+        切换回默认的iframe
+        :return:
+        """
         self.driver.switch_to.default_content()
         # self.driver.switch_to_default_content()
 
         # 切换到上级iframe
 
+    # 切换到上级iframe
     def switch_to_parent_frame(self):
-        """ 切换到上级iframe"""
+        """
+        切换到上级iframe
+        :return:
+        """
         self.driver.switch_to.parent_frame()
 
-        # 刷新当前页面
-
+    # 刷新当前页面
     def refresh(self):
         """
         刷新当前页面
@@ -480,8 +503,7 @@ class BasePage:
         self.driver.refresh()
         logger.info("%s The page has been refreshed" % get_dataTime())
 
-        # 切换到弹窗窗口
-
+    # 切换到弹窗窗口
     def switch_to_alert(self):
         """
         切换到弹窗窗口
@@ -490,9 +512,8 @@ class BasePage:
         logger.info("%s Switch to pop-up window" % get_dataTime())
         return self.driver.switch_to.alert()
 
-        # 同步执行js脚本:execute_script为同步执行且执行时间较短。
-        # WebDriver会等待同步执行的结果然后执行后续代码；
-
+    # 同步执行js脚本:execute_script为同步执行且执行时间较短。
+    # WebDriver会等待同步执行的结果然后执行后续代码；
     def execute_script(self, js):
         """
         同步执行js脚本:execute_script为同步执行且执行时间较短。
@@ -503,9 +524,8 @@ class BasePage:
         logger.info("%s Synchronous execution of JS script: %s" % (get_dataTime(), js))
         return self.driver.execute_script(js)
 
-        # 异步执行js脚本:execute_async_script为异步执行且执行时间较长。
-        # WebDriver不会等待异步执行的结果，而是直接执行后续的代码
-
+    # 异步执行js脚本:execute_async_script为异步执行且执行时间较长。
+    # WebDriver不会等待异步执行的结果，而是直接执行后续的代码
     def execute_async_script(self, js):
         """
         异步执行js脚本:execute_async_script为异步执行且执行时间较长。
@@ -516,8 +536,7 @@ class BasePage:
         logger.info("%s Execute JS script asynchronously: %s" % (get_dataTime(), js))
         return self.driver.execute_async_script(js)
 
-        # 获取sessionid
-
+    # 获取sessionid
     def get_sessionid(self):
         """
         获取sessionid
@@ -537,8 +556,7 @@ class BasePage:
         # print(f"{cookies}")
         return sessionid
 
-        # 获取token
-
+    # 获取token
     def get_token(self):
         """
         获取token
@@ -551,8 +569,7 @@ class BasePage:
         token = self.driver.execute_script('return sessionStorage.getItem("token");')
         return token
 
-        # 判断当前元素是否可见display
-
+    # 判断当前元素是否可见display
     def isdispaly(self, selector):
         """
         判断当前元素是否可见,可见返回True,不看见返回False
@@ -565,17 +582,7 @@ class BasePage:
         else:
             return False
 
-    # 滑动滚动条，到达指定的元素
-    def slidingScrollbar(self, target):
-        """
-        滑动滚动条，到达指定的元素
-        :param target:
-        :return:
-        """
-        js = "arguments[0].scrollIntoView();"
-        logger.info("%s Slide the scroll bar to the specified element: %s" % (get_dataTime(), js))
-        self.driver.execute_script(js, target)
-
+    # 判断这个元素是否存在HTML文档中
     def isElementExist(self, selector):
         """
         判断这个元素是否存在
@@ -590,6 +597,7 @@ class BasePage:
         except NoSuchElementException as e:
             logger.info("该元素没有被找到，不存在页面中,原因: %s" % e)
         return flag
+
     """
     # 通过input标签上传文件
     def uploadFile_to_input(self, selector, path=uploadFilePath):
@@ -605,19 +613,53 @@ class BasePage:
         ele.send_keys(path)
 
     # 下拉框选择
-    def select_option(self, selectot, index=None, value=None, text=None):
+    def select_option(self, selector, index=None, value=None, text=None):
         """
-        下拉框选择
-        :param selectot:    select元素定位表达式
+        下拉框选择,不输入参数时，默认选择第一个
+        :param selector:    select元素定位表达式
         :param index:   index定位
         :param value:   value定位
         :param text:    文本属性定位
         :return:
         """
-        ele = self.find_element(selectot)
+        ele = self.find_element(selector)
         if index:
             Select(ele).select_by_index(index).click()
         elif value:
             Select(ele).select_by_value(value).click()
         elif text:
             Select(ele).select_by_visible_text(text).click()
+        else:
+            Select(ele).select_by_index(0).click()
+
+    # 滑动滚动条，到达指定的元素
+    def slidingScrollbar(self, target):
+        """
+        滑动滚动条，到达指定的元素
+        :param target:
+        :return:
+        """
+        js = "arguments[0].scrollIntoView();"
+        logger.info("%s Slide the scroll bar to the specified element: %s" % (get_dataTime(), js))
+        self.driver.execute_script(js, target)
+
+    # 滑动页面至底部
+    def sliding_to_bottom(self):
+        """
+        滑动页面至底部
+        :return:
+        """
+        # 执行这段代码，会获取到当前窗口总高度
+        js = "return action=document.body.scrollHeight"
+        # 初始化现在滚动条所在高度为0
+        height = 0
+        # 当前窗口总高度
+        new_height = self.driver.execute_script(js)
+        while height < new_height:
+            # 将滚动条调整至页面底部
+            for i in range(height, new_height, 200):
+                self.execute_script('window.scrollTo(0, {})'.format(i))
+                time.sleep(0.5)
+            height = new_height
+            time.sleep(2)
+            new_height = self.execute_script(js)

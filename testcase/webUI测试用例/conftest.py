@@ -28,6 +28,14 @@ def init_commonPage():
     # 关闭浏览器
     # commonPage.quit_browser()
 
+@pytest.fixture(scope="session")
+def init_homePage():
+    """
+    初始化创建一个homePage 实例对象
+    :return:
+    """
+    homePage = HomePage()
+    yield homePage
 
 @pytest.fixture(scope="session")
 def init_loginPage():

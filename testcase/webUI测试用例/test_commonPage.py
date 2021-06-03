@@ -4,6 +4,7 @@
 # @Author  : 黄权权
 # @File    : test_commonPage.py
 # @Software: PyCharm
+
 import allure
 import pytest
 
@@ -416,7 +417,7 @@ class TestCommonPage:
         yield
         self.siteMapPage.back_browser()
 
-    @pytest.mark.test
+    # @pytest.mark.test
     @allure.story("顶部导航栏左侧按钮功能测试")
     @allure.title("验证点击【网站导航】，跳转到网站导航页")
     def test_click_nav_right_J_SiteNavSitemap(self, after_test_click_nav_right_J_SiteNavSitemap):

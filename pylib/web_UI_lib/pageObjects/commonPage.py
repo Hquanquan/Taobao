@@ -4,7 +4,7 @@
 # @Author  : 黄权权
 # @File    : commonPage.py
 # @Software: PyCharm
-# @Desc    : 淘宝-顶部导航栏
+# @Desc    : 淘宝-顶部导航栏，多个页面共同拥有的
 import allure
 
 from pylib.web_UI_lib.pageObjects.basePage import BasePage
