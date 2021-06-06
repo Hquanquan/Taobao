@@ -28,6 +28,7 @@ def init_commonPage():
     # 关闭浏览器
     # commonPage.quit_browser()
 
+
 @pytest.fixture(scope="session")
 def init_homePage():
     """
@@ -36,6 +37,7 @@ def init_homePage():
     """
     homePage = HomePage()
     yield homePage
+
 
 @pytest.fixture(scope="session")
 def init_loginPage():
@@ -86,6 +88,7 @@ def init_openShopPage():
     openShopPage = OpenShopPage()
     yield openShopPage
 
+
 @pytest.fixture(scope="session")
 def init_consumerServicePage():
     """
@@ -95,6 +98,7 @@ def init_consumerServicePage():
     consumerServicePage = ConsumerServicePage()
     yield consumerServicePage
 
+
 @pytest.fixture(scope="session")
 def init_siteMapPage():
     """
@@ -103,4 +107,3 @@ def init_siteMapPage():
     """
     siteMapPage = SiteMapPage()
     yield siteMapPage
-

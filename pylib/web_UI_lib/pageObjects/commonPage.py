@@ -32,6 +32,8 @@ class CommonPage(BasePage):
         self.nav_left_user = ['xpath', '//*[@id="J_SiteNavLogin"]/div[1]/div[2]']
         # 手机逛淘宝
         self.nav_left_taobao = ['id', 'J_SiteNavMobile']
+        # 淘宝网首页，当页不是在淘宝首页时显示
+        self.nav_right_honePage = ["xpath", '//*[@id="J_SiteNavBdR"]/li[1]/div/a']
         # 我的淘宝
         self.nav_right_mytaobao = ['id', 'J_SiteNavMytaobao']
         # 鼠标移入【我的淘宝】显示的一组元素
@@ -108,6 +110,14 @@ class CommonPage(BasePage):
         :return:
         """
         self.click(self.nav_left_taobao)
+
+    @allure.step("step:点击【淘宝网首页】")
+    def click_nav_right_honePage(self):
+        """
+        点击【淘宝网首页】,当页面不是在淘宝首页时显示
+        :return:
+        """
+        self.click(self.nav_right_honePage)
 
     @allure.step("step:点击【我的淘宝】按钮")
     def click_nav_right_mytaobao_btn(self):
