@@ -18,17 +18,17 @@ def run():
     for one in os.listdir('report/tmp'):  # 列出对应文件夹的数据
         if 'json' in one:
             os.remove(f"report/tmp/{one}")
-    pytest.main(['testcase/webUI测试用例', '-s', '--alluredir=report/tmp'])
+    pytest.main(['testcase/webUI测试用例/未登录-淘宝网站功能测试', '-s', '--alluredir=report/tmp'])
     os.system('allure serve report/tmp')
 
 
 if __name__ == '__main__':
-    # run()
+    run()
 
     # pytest.main(["-s", "-k test_isDisplay_nav_left_Login"])
 
     # 运行被标记有test的测试用例
-    pytest.main(["-s", "-m", "test"])
+    # pytest.main(["-s", "-m", "test"])
 
     # c = CommonPage()
     # c.move_to_nav_left_location()
