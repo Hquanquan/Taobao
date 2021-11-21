@@ -138,8 +138,6 @@ class BasePage:
 
         return element
 
-        #   查找一组元素
-
     # 根据特定的表达式获取一组元素
     def find_elements(self, selectors):
         """
@@ -227,10 +225,8 @@ class BasePage:
         else:
             logger.error("%s Please enter a valid type of targeting elements." % get_dataTime())
             raise NameError("%s Please enter a valid type of targeting elements." % get_dataTime())
-
+        # 返回elements
         return elements
-
-        # 保存截图
 
     # 截图
     def get_windows_img(self):
@@ -239,12 +235,14 @@ class BasePage:
         :return:
         """
         file_path = os.path.abspath('.') + '\\screenshots\\'
+        # 判断文件是否存在，存在返回True,不存在返回False
         isExists = os.path.exists(file_path)
         # print(f"截图位置：{file_path}")
         # 判断文件夹是否存在，如果不存在则创建。
         if not isExists:
             try:
                 os.makedirs(file_path)
+                logger.info("%s created new bulid folder :%s" % (get_dataTime(), file_path))
             except Exception as e:
                 logger.error("%s Failed new bulid folder %s" % (get_dataTime(), e))
         # # 获取时间作为字符串，用作保存图片的名称
@@ -258,8 +256,6 @@ class BasePage:
             logger.error("%s Failed to take screenshot! %s" % (get_dataTime(), e))
             self.get_windows_img()
 
-        # quit browser and end testing 浏览器退出方法
-
     # 退出浏览器
     def quit_browser(self):
         """
@@ -270,8 +266,6 @@ class BasePage:
         self.driver.quit()
         self.driver = None
 
-        # forward browser 浏览器前进方法
-
     # 浏览器前进到下一页
     def forward_browser(self):
         """
@@ -281,8 +275,6 @@ class BasePage:
         self.driver.forward()
         logger.info("%s Click forward on current page." % get_dataTime())
 
-        # back browser 浏览器后退方法
-
     # 浏览器后退到上一页
     def back_browser(self):
         """
@@ -291,8 +283,6 @@ class BasePage:
         """
         self.driver.back()
         logger.info("%s Click back to current page." % get_dataTime())
-
-        #  关闭当前浏览器窗口
 
     # 关闭当前浏览器窗口
     def close_browser(self):
@@ -317,7 +307,8 @@ class BasePage:
         :return:
         """
         el = self.find_element(selector)  # 获取元素位置信息
-        el.clear()  # 文本框清空
+        # 先对文本框清空
+        el.clear()
         try:
             el.send_keys(text)  # 输入文本信息
             logger.info("%s Had type \' %s \' in inputBox" % (get_dataTime(), text))
@@ -351,8 +342,6 @@ class BasePage:
             except NameError as e:
                 logger.error("%s Failed to type in input box with %s" % (get_dataTime(), e))
                 self.get_windows_img()
-
-        # Text clear 文本框清空 selector:元素位置
 
     # 清空文本框
     def clear(self, selector):
@@ -397,9 +386,7 @@ class BasePage:
         logger.info("%s Current page title is %s" % (get_dataTime(), self.driver.title))
         return self.driver.title
 
-        # 鼠标悬停在元素上
-
-    # 鼠标移入某个元素上
+    # 鼠标悬停在元素上
     def move_to_element(self, selector):
         """
         鼠标移入某个元素上
@@ -425,8 +412,6 @@ class BasePage:
         logger.info("%s Get the current window handle" % get_dataTime())
         return self.driver.current_window_handle
 
-        # 获取所有窗口句柄
-
     # 获取所有窗口句柄
     def window_handles(self):
         """
@@ -435,8 +420,6 @@ class BasePage:
         """
         logger.info("%s Get all window handles" % get_dataTime())
         return self.driver.window_handles
-
-        # 切换窗口
 
     # 切换到指定的窗口，默认为当前窗口
     def switch_to_window(self, window=""):
@@ -451,8 +434,6 @@ class BasePage:
             self.driver.switch_to_window(window)
         logger.info("%s Switch the window" % get_dataTime())
 
-        # 切换到当前最新打开的窗口
-
     # 切换到当前最新打开的窗口
     def switch_to_new_window(self):
         """
@@ -460,7 +441,7 @@ class BasePage:
         :return:
         """
         logger.info("%s Switch to the current latest window" % get_dataTime())
-        self.driver.switch_to.window(self.window_handles()[-1])
+        self.driver.switch_to.window(self.driver.window_handles[-1])
 
     # 切换到指定的iframe
     def switch_to_iframe(self, selector):
@@ -473,8 +454,6 @@ class BasePage:
         self.driver.switch_to.frame(iframe_object)
         logger.info("%s Switch to the iframe" % get_dataTime())
 
-        # 切换回默认的主界面
-
     # 切换回默认的iframe
     def switch_to_default_content(self):
         """
@@ -482,7 +461,6 @@ class BasePage:
         :return:
         """
         self.driver.switch_to.default_content()
-        # self.driver.switch_to_default_content()
 
         # 切换到上级iframe
 
@@ -511,6 +489,37 @@ class BasePage:
         """
         logger.info("%s Switch to pop-up window" % get_dataTime())
         return self.driver.switch_to.alert()
+
+    # 获取对话框窗口的提示文本：text = alert.text
+    def get_alert_text(self, alert_ele):
+        """
+        获取对话框窗口的提示文本
+        :param alert_ele: alert对话框元素
+        :return:
+        """
+        alertText = alert_selector.text
+        logger.info("%s Geted the prompt text to the dialog window: %s " % (get_dataTime(), alertText))
+        return alertText
+
+    # alert对话框窗口, 点击确定按钮
+    def alertAccept(self, alert_ele):
+        """
+        alert对话框窗口,点击确定按钮：alert.accept()
+        :param alert_ele:
+        :return:
+        """
+        alert_ele.accept()
+        logger.info("%s Clicked the OK button in the dialog window" % get_dataTime())
+
+    # alert对话框窗口,点击取消按钮：alert.dismiss()
+    def alertDismiss(self, alert_ele):
+        """
+        点击取消按钮：alert.dismiss()
+        :param alert_ele:
+        :return:
+        """
+        alert_ele.dismiss()
+        logger.info("%s Clicked the Cancel button in the dialog window" % get_dataTime())
 
     # 同步执行js脚本:execute_script为同步执行且执行时间较短。
     # WebDriver会等待同步执行的结果然后执行后续代码；
@@ -546,7 +555,7 @@ class BasePage:
         # window.sessionStorage和直接写sessionStorage是等效的
         # 一定要使用return，不然获取到的一直是None
         # get的Item不一定就叫sessionId，得具体看目标系统把sessionid存到哪个变量中
-        sessionid = self.driver.execute_script('return sessionStorage.getItem("sessionId");')
+        sessionid = self.execute_script('return sessionStorage.getItem("sessionId");')
         # 另外sessionid一般都直接通过返回Set-Cookies头设置到Cookie中，所以也可以从Cookie读取
         # 获取浏览器所有Set-Cookie，返回对象是字典列表
         # cookies = self.driver.get_cookies()
@@ -566,16 +575,16 @@ class BasePage:
         # window.sessionStorage和直接写sessionStorage是等效的
         # 一定要使用return，不然获取到的一直是None
         # get的Item不一定就叫token，得具体看目标系统把token存到哪个变量中
-        token = self.driver.execute_script('return sessionStorage.getItem("token");')
+        token = self.execute_script('return sessionStorage.getItem("token");')
         return token
 
     # 判断当前元素是否可见display
     def isdispaly(self, selector):
         """
         判断当前元素是否可见,可见返回True,不看见返回False
+        :param selector:
         :return:
         """
-
         el = self.find_element(selector)  # 获取元素位置信息
         if el:
             return el.is_displayed()
@@ -583,15 +592,15 @@ class BasePage:
             return False
 
     # 判断这个元素是否存在HTML文档中
-    def isElementExist(self, selector):
+    def isElementExist(self, selectors):
         """
         判断这个元素是否存在
-        :param selector:
+        :param selectors:
         :return:
         """
         flag = False
         try:
-            self.find_element(selector)
+            self.find_element(selectors)
             logger.info("该元素已被找到，存在页面中")
             flag = True
         except NoSuchElementException as e:
