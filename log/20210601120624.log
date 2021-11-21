@@ -1,0 +1,13 @@
+2021-06-01 12:06:25-381546 You had select Chrome browser!
+2021-06-01 12:06:25-381546 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 12:06:25-382518 The test server url is https://www.taobao.com/
+2021-06-01 12:06:34-758914 Starting Chorme browser!
+2021-06-01 12:06:46-517124 Open url https://www.taobao.com/ 
+2021-06-01 12:06:46-527283 Set implicitly wait 10
+2021-06-01 12:06:46-992194 Had find the element ' 中国大陆 ' successfully by css selector via value:#J_SiteNavBd .site-nav-menu-hd .site-nav-region
+2021-06-01 12:06:47-355493 The mouse move on 中国大陆
+2021-06-01 12:06:47-440814 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavRegionList"]/li
+2021-06-01 12:06:49-331740 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+2021-06-01 12:06:50-232119 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+2021-06-01 12:06:56-671279 The element was click
+2021-06-01 12:06:56-747061 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]

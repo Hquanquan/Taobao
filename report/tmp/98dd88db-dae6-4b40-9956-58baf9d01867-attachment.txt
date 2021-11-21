@@ -1,0 +1,8 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:00-558868 Had find the element ' 
+收藏夹
+
+收藏的宝贝
+收藏的店铺 ' successfully by xpath via value://*[@id="J_SiteNavFavor"]
+INFO     BasePage:basePage.py:373 2021-06-03 00:10:01-936870 The element was click
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:02-002223 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+INFO     BasePage:basePage.py:288 2021-06-03 00:10:02-657730 Click back to current page.

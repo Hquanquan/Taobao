@@ -1,0 +1,40 @@
+2021-06-01 22:07:19-952079 You had select Chrome browser!
+2021-06-01 22:07:19-952079 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 22:07:19-952079 The test server url is https://www.taobao.com/
+2021-06-01 22:07:25-016498 Starting Chorme browser!
+2021-06-01 22:07:32-732086 Open url https://www.taobao.com/ 
+2021-06-01 22:07:32-740119 Set implicitly wait 10
+2021-06-01 22:07:32-928774 Had find the element ' 中国大陆 ' successfully by css selector via value:#J_SiteNavBd .site-nav-menu-hd .site-nav-region
+2021-06-01 22:07:33-296243 The mouse move on 中国大陆
+2021-06-01 22:07:33-360011 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavRegionList"]/li
+2021-06-01 22:07:33-864037 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+2021-06-01 22:07:34-008989 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+2021-06-01 22:07:40-920828 The element was click
+2021-06-01 22:07:40-996859 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-01 22:07:42-463470 Click back to current page.
+2021-06-01 22:07:42-627497 Had find the element ' 免费注册 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[2]
+2021-06-01 22:07:48-507214 The element was click
+2021-06-01 22:07:48-508214 Current page title is 注册
+2021-06-01 22:07:49-519863 Click back to current page.
+2021-06-01 22:07:49-627492 Had find the element ' 手机逛淘宝 ' successfully by id via value:J_SiteNavMobile
+2021-06-01 22:07:53-527355 The element was click
+2021-06-01 22:07:53-528352 Current page title is PC下载页
+2021-06-01 22:07:54-456970 Click back to current page.
+2021-06-01 22:07:54-554971 Had find the element ' 我的淘宝
+ ' successfully by id via value:J_SiteNavMytaobao
+2021-06-01 22:07:56-672198 The element was click
+2021-06-01 22:07:56-741659 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-01 22:07:57-563285 Click back to current page.
+2021-06-01 22:07:57-668289 Had find the element ' 
+购物车
+ ' successfully by id via value:J_MiniCart
+2021-06-01 22:07:59-150604 The element was click
+2021-06-01 22:07:59-218419 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-01 22:08:00-139511 Click back to current page.
+2021-06-01 22:08:00-294139 Had find the element ' 我的淘宝
+ ' successfully by id via value:J_SiteNavMytaobao
+2021-06-01 22:08:00-629709 The mouse move on 我的淘宝
+
+已买到的宝贝
+我的足迹
+2021-06-01 22:08:00-684713 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavMytaobao"]/div[2]/div/a

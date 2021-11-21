@@ -7,11 +7,10 @@
 # @Desc    : None
 import json
 
-from configs.api_env import TestCaseFilePath
 import xlrd
 
 
-def get_excelDataByCaseName(sheetName, caseName, filePath=TestCaseFilePath):
+def get_excelDataByCaseName(sheetName, caseName, filePath):
     """
     根据sheetName和caseName,获取测试用例表里的用例
     :param filePath: 文件路径
@@ -38,7 +37,7 @@ def get_excelDataByCaseName(sheetName, caseName, filePath=TestCaseFilePath):
     return resList
 
 
-if __name__ == '__main__':
-    data = get_excelDataByCaseName("登录模块", "Login", "../data/教管系统接口测试用例.xls")
-    for one in data:
-        print(one[0]["username"])
+# if __name__ == '__main__':
+#     data = get_excelDataByCaseName("登录模块", "Login", "../data/教管系统接口测试用例.xls")
+#     for one in data:
+#         print(one[0]["username"])

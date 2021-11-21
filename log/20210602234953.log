@@ -1,0 +1,176 @@
+2021-06-02 23:49:53-907203 You had select Chrome browser!
+2021-06-02 23:49:53-907203 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-02 23:49:53-908201 The test server url is https://www.taobao.com/
+2021-06-02 23:49:59-183189 Starting Chorme browser!
+2021-06-02 23:50:03-049857 Open url https://www.taobao.com/ 
+2021-06-02 23:50:03-060890 Set implicitly wait 10
+2021-06-02 23:50:03-597890 Had find the element ' 中国大陆 ' successfully by css selector via value:#J_SiteNavBd .site-nav-menu-hd .site-nav-region
+2021-06-02 23:50:03-941891 The mouse move on 中国大陆
+2021-06-02 23:50:04-011889 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavRegionList"]/li
+2021-06-02 23:50:04-975097 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+2021-06-02 23:50:05-129095 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+2021-06-02 23:50:11-396745 The element was click
+2021-06-02 23:50:11-477744 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-02 23:50:12-522745 Click back to current page.
+2021-06-02 23:50:12-723745 Had find the element ' 免费注册 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[2]
+2021-06-02 23:50:14-757745 The element was click
+2021-06-02 23:50:14-758746 Current page title is 注册
+2021-06-02 23:50:16-701748 Click back to current page.
+2021-06-02 23:50:16-914747 Had find the element ' 手机逛淘宝 ' successfully by id via value:J_SiteNavMobile
+2021-06-02 23:50:20-678748 The element was click
+2021-06-02 23:50:20-678748 Current page title is PC下载页
+2021-06-02 23:50:22-832334 Click back to current page.
+2021-06-02 23:50:23-339336 Had find the element ' 我的淘宝
+ ' successfully by id via value:J_SiteNavMytaobao
+2021-06-02 23:50:26-079072 The element was click
+2021-06-02 23:50:26-280070 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-02 23:50:27-416072 Click back to current page.
+2021-06-02 23:50:27-583072 Had find the element ' 
+购物车
+ ' successfully by id via value:J_MiniCart
+2021-06-02 23:50:29-729071 The element was click
+2021-06-02 23:50:29-795072 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-02 23:50:30-690072 Click back to current page.
+2021-06-02 23:50:30-839076 Had find the element ' 
+收藏夹
+ ' successfully by xpath via value://*[@id="J_SiteNavFavor"]
+2021-06-02 23:50:31-210072 The mouse move on 
+收藏夹
+
+收藏的宝贝
+收藏的店铺
+2021-06-02 23:50:31-284073 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavFavor"]/div[2]/div/a
+2021-06-02 23:50:31-567076 Had find the element ' 
+收藏夹
+
+收藏的宝贝
+收藏的店铺 ' successfully by xpath via value://*[@id="J_SiteNavFavor"]
+2021-06-02 23:50:33-440073 The element was click
+2021-06-02 23:50:33-503072 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-02 23:50:34-244930 Click back to current page.
+2021-06-02 23:50:34-413930 Had find the element ' 商品分类 ' successfully by xpath via value://*[@id="J_SiteNavCatalog"]/div/a/span
+2021-06-02 23:50:37-423930 The element was click
+2021-06-02 23:50:37-424931 Current page title is 淘宝首页行业市场
+2021-06-02 23:50:38-162934 Click back to current page.
+2021-06-02 23:50:38-310929 Had find the element ' 免费开店 ' successfully by xpath via value://*[@id="J_SiteNavFree"]/div/a/span
+2021-06-02 23:50:43-681933 The element was click
+2021-06-02 23:50:43-682930 Current page title is 新商家开店
+2021-06-02 23:50:44-964580 Click back to current page.
+2021-06-02 23:50:45-108580 Had find the element ' 千牛卖家中心
+ ' successfully by id via value:J_SiteNavSeller
+2021-06-02 23:50:45-440300 The mouse move on 千牛卖家中心
+
+免费开店
+已卖出的宝贝
+出售中的宝贝
+卖家服务市场
+卖家培训中心
+体检中心
+问商友
+2021-06-02 23:50:45-721270 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavSeller"]/div[2]/div/a
+2021-06-02 23:50:46-322301 Had find the element ' 千牛卖家中心
+
+免费开店
+已卖出的宝贝
+出售中的宝贝
+卖家服务市场
+卖家培训中心
+体检中心
+问商友 ' successfully by id via value:J_SiteNavSeller
+2021-06-02 23:50:48-646535 The element was click
+2021-06-02 23:50:49-070904 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-02 23:50:50-112902 Click back to current page.
+2021-06-02 23:50:50-288872 Had find the element ' 联系客服 ' successfully by xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+2021-06-02 23:50:50-783901 The mouse move on 联系客服
+2021-06-02 23:50:50-951904 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavService"]/div[2]/div/a
+2021-06-02 23:50:51-217903 Had find the element ' 联系客服 ' successfully by xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+2021-06-02 23:50:52-747903 The element was click
+2021-06-02 23:50:52-748904 Current page title is 服务中心
+2021-06-02 23:50:53-759905 Click back to current page.
+2021-06-02 23:50:53-977901 Had find the element ' 网站导航 ' successfully by xpath via value://*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]
+2021-06-02 23:50:54-372905 The mouse move on 网站导航
+2021-06-02 23:50:54-851903 Had find the element ' 主题市场
+女装
+男装
+内衣
+鞋靴
+箱包
+婴童
+家电
+数码
+手机
+美妆
+珠宝
+眼镜
+手表
+运动
+户外
+乐器
+游戏
+动漫
+影视
+美食
+鲜花
+宠物
+农资
+房产
+装修
+建材
+家居
+百货
+汽车
+二手车
+办公
+定制
+教育
+卡券
+本地
+特色市场
+全球购
+极有家
+阿里拍卖
+淘宝众筹
+飞猪
+农资
+天天特卖
+Outlets
+淘抢购
+试用
+量贩团
+阿里翻译
+阿里APP
+淘宝
+天猫
+支付宝
+聚划算
+飞猪
+蚂蚁聚宝
+闲鱼
+淘小铺
+阿里钱盾
+钉钉
+高德地图
+虾米音乐
+淘票票
+菜鸟裹裹
+阿里云
+网商银行
+阿里邮箱
+阿里众包
+精彩推荐集
+余额宝
+大牌捡宝
+淘公仔
+浏览器
+淘宝香港
+淘宝台湾
+淘宝全球
+淘宝东南亚
+闺蜜淘货
+大众评审
+淘工作
+阿里巴巴认证 ' successfully by id via value:J_SiteMapBd
+2021-06-02 23:50:55-267906 Had find the element ' 网站导航 ' successfully by xpath via value://*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]
+2021-06-02 23:50:56-194912 The element was click
+2021-06-02 23:50:56-195907 Current page title is 网址导航
+2021-06-02 23:50:57-287903 Click back to current page.

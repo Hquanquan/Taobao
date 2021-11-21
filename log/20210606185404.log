@@ -1,0 +1,13 @@
+2021-06-06 18:54:05-610309 You had select Chrome browser!
+2021-06-06 18:54:05-610309 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-06 18:54:05-611419 The test server url is https://www.taobao.com/
+2021-06-06 18:54:10-980736 Starting Chorme browser!
+2021-06-06 18:54:15-203477 Open url https://www.taobao.com/ 
+2021-06-06 18:54:15-206472 Set implicitly wait 10
+2021-06-06 18:54:15-689502 Had find the element ' 亲，请登录 ' successfully by xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+2021-06-06 18:54:22-117846 The element was click
+2021-06-06 18:54:22-209848 Had find the element '  ' successfully by css selector via value:#login > div.corner-icon-view.view-type-qrcode > i
+2021-06-06 18:54:22-954845 The element was click
+2021-06-06 18:54:52-496268 Message: 
+ :Timeout查找元素超时。
+2021-06-06 18:54:52-514269 Had find the element '  ' successfully by xpath via value://*[@id="J_SiteNavBdR"]/li[1]/div/a

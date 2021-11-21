@@ -1,0 +1,4 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:18-273373 Had find the element ' 网站导航 ' successfully by xpath via value://*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]
+INFO     BasePage:basePage.py:373 2021-06-03 00:10:19-104371 The element was click
+INFO     BasePage:basePage.py:385 2021-06-03 00:10:19-105375 Current page title is 网址导航
+INFO     BasePage:basePage.py:288 2021-06-03 00:10:19-805074 Click back to current page.

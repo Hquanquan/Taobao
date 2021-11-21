@@ -1,0 +1,44 @@
+2021-06-06 13:05:50-405078 You had select Chrome browser!
+2021-06-06 13:05:50-406078 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-06 13:05:50-406078 The test server url is https://www.taobao.com/
+2021-06-06 13:05:59-986751 Starting Chorme browser!
+2021-06-06 13:06:05-135511 Open url https://www.taobao.com/ 
+2021-06-06 13:06:05-142481 Set implicitly wait 10
+2021-06-06 13:06:05-156495 Synchronous execution of JS script: window.scrollTo(0, 0)
+2021-06-06 13:06:05-667892 Synchronous execution of JS script: window.scrollTo(0, 200)
+2021-06-06 13:06:06-178672 Synchronous execution of JS script: window.scrollTo(0, 400)
+2021-06-06 13:06:06-704039 Synchronous execution of JS script: window.scrollTo(0, 600)
+2021-06-06 13:06:07-228518 Synchronous execution of JS script: window.scrollTo(0, 800)
+2021-06-06 13:06:08-906728 Synchronous execution of JS script: window.scrollTo(0, 1000)
+2021-06-06 13:06:10-612589 Synchronous execution of JS script: window.scrollTo(0, 1200)
+2021-06-06 13:06:11-147620 Synchronous execution of JS script: window.scrollTo(0, 1400)
+2021-06-06 13:06:11-661590 Synchronous execution of JS script: window.scrollTo(0, 1600)
+2021-06-06 13:06:12-224731 Synchronous execution of JS script: window.scrollTo(0, 1800)
+2021-06-06 13:06:14-735618 Synchronous execution of JS script: return action=document.body.scrollHeight
+2021-06-06 13:06:14-755622 Synchronous execution of JS script: window.scrollTo(0, 1931)
+2021-06-06 13:06:15-279746 Synchronous execution of JS script: window.scrollTo(0, 2131)
+2021-06-06 13:06:15-815648 Synchronous execution of JS script: window.scrollTo(0, 2331)
+2021-06-06 13:06:16-328600 Synchronous execution of JS script: window.scrollTo(0, 2531)
+2021-06-06 13:06:16-870817 Synchronous execution of JS script: window.scrollTo(0, 2731)
+2021-06-06 13:06:17-380439 Synchronous execution of JS script: window.scrollTo(0, 2931)
+2021-06-06 13:06:17-912358 Synchronous execution of JS script: window.scrollTo(0, 3131)
+2021-06-06 13:06:18-451348 Synchronous execution of JS script: window.scrollTo(0, 3331)
+2021-06-06 13:06:18-964213 Synchronous execution of JS script: window.scrollTo(0, 3531)
+2021-06-06 13:06:19-515052 Synchronous execution of JS script: window.scrollTo(0, 3731)
+2021-06-06 13:06:20-024231 Synchronous execution of JS script: window.scrollTo(0, 3931)
+2021-06-06 13:06:20-565229 Synchronous execution of JS script: window.scrollTo(0, 4131)
+2021-06-06 13:06:21-075578 Synchronous execution of JS script: window.scrollTo(0, 4331)
+2021-06-06 13:06:21-619598 Synchronous execution of JS script: window.scrollTo(0, 4531)
+2021-06-06 13:06:22-130900 Synchronous execution of JS script: window.scrollTo(0, 4731)
+2021-06-06 13:06:22-641898 Synchronous execution of JS script: window.scrollTo(0, 4931)
+2021-06-06 13:06:23-151004 Synchronous execution of JS script: window.scrollTo(0, 5131)
+2021-06-06 13:06:23-659896 Synchronous execution of JS script: window.scrollTo(0, 5331)
+2021-06-06 13:06:24-193193 Synchronous execution of JS script: window.scrollTo(0, 5531)
+2021-06-06 13:06:24-707734 Synchronous execution of JS script: window.scrollTo(0, 5731)
+2021-06-06 13:06:25-219737 Synchronous execution of JS script: window.scrollTo(0, 5931)
+2021-06-06 13:06:25-968236 Synchronous execution of JS script: window.scrollTo(0, 6131)
+2021-06-06 13:06:26-479996 Synchronous execution of JS script: window.scrollTo(0, 6331)
+2021-06-06 13:06:26-988405 Synchronous execution of JS script: window.scrollTo(0, 6531)
+2021-06-06 13:06:29-500651 Synchronous execution of JS script: return action=document.body.scrollHeight
+2021-06-06 13:06:29-515684 Synchronous execution of JS script: window.scrollTo(0, 6583)
+2021-06-06 13:06:32-031735 Synchronous execution of JS script: return action=document.body.scrollHeight

@@ -1,0 +1,3 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:15-098056 Had find the element ' 联系客服 ' successfully by xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+INFO     BasePage:basePage.py:399 2021-06-03 00:10:15-406724 The mouse move on 联系客服
+INFO     BasePage:basePage.py:212 2021-06-03 00:10:15-452496 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavService"]/div[2]/div/a

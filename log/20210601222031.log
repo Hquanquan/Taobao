@@ -1,0 +1,15 @@
+2021-06-01 22:20:32-719238 You had select Chrome browser!
+2021-06-01 22:20:32-719238 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 22:20:32-719238 The test server url is https://www.taobao.com/
+2021-06-01 22:20:37-804789 Starting Chorme browser!
+2021-06-01 22:20:41-502900 Open url https://www.taobao.com/ 
+2021-06-01 22:20:41-508932 Set implicitly wait 10
+2021-06-01 22:20:41-762910 Had find the element ' 
+收藏夹
+ ' successfully by xpath via value://*[@id="J_SiteNavFavor"]
+2021-06-01 22:20:42-136087 The mouse move on 
+收藏夹
+
+收藏的宝贝
+收藏的店铺
+2021-06-01 22:20:42-201488 Had find the elements  successfully by xpath via value://*[@id="J_SiteNavMytaobao"]/div[2]/div/a

@@ -1,0 +1,10 @@
+2021-06-03 22:08:54-918482 You had select Chrome browser!
+2021-06-03 22:08:54-918482 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-03 22:08:54-918482 The test server url is https://www.taobao.com/
+2021-06-03 22:09:01-940357 Starting Chorme browser!
+2021-06-03 22:09:06-662769 Open url https://www.taobao.com/ 
+2021-06-03 22:09:06-667770 Set implicitly wait 10
+2021-06-03 22:09:06-939664 Had find the element ' 网站导航 ' successfully by xpath via value://*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]
+2021-06-03 22:09:08-484430 The element was click
+2021-06-03 22:09:08-485430 Current page title is 网址导航
+2021-06-03 22:09:09-991813 Click back to current page.

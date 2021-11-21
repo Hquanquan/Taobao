@@ -1,0 +1,8 @@
+2021-06-02 23:37:34-561963 You had select Chrome browser!
+2021-06-02 23:37:34-561963 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-02 23:37:34-561963 The test server url is https://www.taobao.com/
+2021-06-02 23:37:39-865010 Starting Chorme browser!
+2021-06-02 23:37:43-740040 Open url https://www.taobao.com/ 
+2021-06-02 23:37:43-744041 Set implicitly wait 10
+2021-06-02 23:37:43-985378 Had find the element ' 网站导航 ' successfully by xpath via value://*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]
+2021-06-02 23:37:44-367085 The mouse move on 网站导航

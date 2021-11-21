@@ -1,0 +1,11 @@
+2021-06-01 18:25:53-941658 You had select Chrome browser!
+2021-06-01 18:25:53-941658 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 18:25:53-941658 The test server url is https://www.taobao.com/
+2021-06-01 18:25:58-388111 Starting Chorme browser!
+2021-06-01 18:26:01-995416 Open url https://www.taobao.com/ 
+2021-06-01 18:26:02-077416 Set implicitly wait 10
+2021-06-01 18:26:02-182207 Had find the element ' 我的淘宝
+ ' successfully by id via value:J_SiteNavMytaobao
+2021-06-01 18:26:05-644004 The element was click
+2021-06-01 18:26:05-728049 Had find the element ' 密码登录 ' successfully by xpath via value://*[@id="login"]/div[2]/div/div[1]/a[1]
+2021-06-01 18:26:06-905609 Click back to current page.

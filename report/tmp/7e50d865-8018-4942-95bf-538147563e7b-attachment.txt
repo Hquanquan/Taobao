@@ -1,0 +1,4 @@
+INFO     BasePage:basePage.py:121 2021-06-03 00:10:02-773145 Had find the element ' 商品分类 ' successfully by xpath via value://*[@id="J_SiteNavCatalog"]/div/a/span
+INFO     BasePage:basePage.py:373 2021-06-03 00:10:05-766528 The element was click
+INFO     BasePage:basePage.py:385 2021-06-03 00:10:05-766528 Current page title is 淘宝首页行业市场
+INFO     BasePage:basePage.py:288 2021-06-03 00:10:06-560531 Click back to current page.

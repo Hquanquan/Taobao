@@ -1,0 +1,10 @@
+2021-06-01 22:44:09-718204 You had select Chrome browser!
+2021-06-01 22:44:09-718204 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 22:44:09-718204 The test server url is https://www.taobao.com/
+2021-06-01 22:44:14-164062 Starting Chorme browser!
+2021-06-01 22:44:17-545167 Open url https://www.taobao.com/ 
+2021-06-01 22:44:17-548147 Set implicitly wait 10
+2021-06-01 22:44:17-860314 Had find the element ' 商品分类 ' successfully by xpath via value://*[@id="J_SiteNavCatalog"]/div/a/span
+2021-06-01 22:44:20-795342 The element was click
+2021-06-01 22:44:20-795342 Current page title is 淘宝首页行业市场
+2021-06-01 22:44:22-111343 Click back to current page.

@@ -1,0 +1,10 @@
+2021-06-01 18:13:32-483098 You had select Chrome browser!
+2021-06-01 18:13:32-483098 You had select E:\Python\chromedriver_win32\chromedriver.exe 
+2021-06-01 18:13:32-483098 The test server url is https://www.taobao.com/
+2021-06-01 18:13:36-774733 Starting Chorme browser!
+2021-06-01 18:13:40-408341 Open url https://www.taobao.com/ 
+2021-06-01 18:13:40-413340 Set implicitly wait 10
+2021-06-01 18:13:40-578320 Had find the element ' 手机逛淘宝 ' successfully by id via value:J_SiteNavMobile
+2021-06-01 18:13:43-265164 The element was click
+2021-06-01 18:13:43-266192 Current page title is PC下载页
+2021-06-01 18:13:44-620404 Click back to current page.
